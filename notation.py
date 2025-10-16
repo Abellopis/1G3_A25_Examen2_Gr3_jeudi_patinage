@@ -32,7 +32,7 @@ def calculer_points(vbase: float, notes: list[float]) -> float:
         note_min = min(notes)
 
         for i in range(len(notes)):
-            if notes[i] == note_max or note_min:
+            if notes[i] == note_max or note_min:0
                 notes.remove(notes[i])
 
         moyenne = sum(notes) / 9
